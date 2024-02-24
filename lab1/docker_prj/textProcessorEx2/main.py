@@ -11,6 +11,10 @@ def eliminatePunctuation(text: str):
     return text
 
 
+def convertToLower(text: str):
+    return text.lower()
+
+
 def main():
     print("File contents without punctuation: ", eliminatePunctuation(readFile("text.txt")))
 
