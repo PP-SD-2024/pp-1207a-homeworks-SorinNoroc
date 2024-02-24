@@ -1,3 +1,6 @@
+import re
+
+
 def readFile(file: str):
     if file.endswith(".txt"):
         with (open(file) as txtFile):
@@ -15,8 +18,13 @@ def convertToLower(text: str):
     return text.lower()
 
 
+def replaceMultipleSpaces(text):
+    return re.sub(" {2,}", " ", text)
+
+
 def main():
-    print("File contents without punctuation: ", eliminatePunctuation(readFile("text.txt")))
+    fileText = readFile("text.txt")
+    print("Continutul dupa prelucrare: ", replaceMultipleSpaces(convertToLower(eliminatePunctuation(fileText))))
 
 
 if __name__ == '__main__':
