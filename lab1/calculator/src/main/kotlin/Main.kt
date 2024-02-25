@@ -132,10 +132,10 @@ fun main(args: Array<String>) {
         operation = reader.nextLine() ?: ""
         if (operation == "exit" || operation == "") return
 
-        val operands = operation.split("+", "-", "*", "/", "^", "%")
+        val operands = operation.split("+", "-", "*", "/", "^", "%", "(", ")")
         val correctOperands = operands.filter {
             // Filter input to be a single-digit number
-            it.length == 1 && it[0].isDigit()
+            it.length == 1 && it[0].isDigit() || it.isEmpty()
         }
         if (operands != correctOperands) {
             print("Wrong operation! Retry. ")
