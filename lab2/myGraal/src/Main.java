@@ -5,6 +5,9 @@ import java.util.*;
 
 class Polyglot {
     private static Integer[] randomList(){
+
+        // Aplicatie 3
+
         Context polyglot = Context.newBuilder().allowAllAccess(true).build();
         Integer[] a = new Integer[20];
         for (int i = 0; i < 20; i++) {
@@ -15,12 +18,18 @@ class Polyglot {
     }
 
     private static void printJS(Integer[] vect) {
+
+        // Aplicatie 3
+
         Context polyglot = Context.newBuilder().allowAllAccess(true).build();
         polyglot.eval("js", "console.log('" + Arrays.toString(vect) + "')");
         polyglot.close();
     }
 
     private static Double changeListR(Integer[] vect) {
+
+        // Aplicatie 3
+
         double d;
         Context polyglot = Context.newBuilder().allowAllAccess(true).build();
 
@@ -44,6 +53,9 @@ class Polyglot {
     }
 
     private static void regressionR(String file, String image_name, String output_path, String color) {
+
+        // Tema 2
+
         Context polyglot = Context.newBuilder().allowAllAccess(true).build();
         String bigR = String.format("""
                 dataset <- read.csv("%s")
@@ -64,6 +76,9 @@ class Polyglot {
     }
 
     private static void binomial() {
+
+        // Tema 3
+
         Context polyglot = Context.newBuilder().allowAllAccess(true).build();
         int aruncari = polyglot.eval("python", "int(input('Dati nr. de aruncari a unei monede: '))").asInt();
         int x = polyglot.eval("python", "int(input('Dati nr. de pajure masurate: '))").asInt();
@@ -79,21 +94,21 @@ class Polyglot {
 
     public static void main(String[] args) throws IOException {
 //      Aplicatie 3
-//        Integer[] vect = randomList();
-//        printJS(vect);
-//        Double media = changeListR(vect);
-//        System.out.println("Media a 60% din numere: " + media);
+        Integer[] vect = randomList();
+        printJS(vect);
+        Double media = changeListR(vect);
+        System.out.println("Media a 60% din numere: " + media);
 
         // Tema 2
-//        BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
-//        System.out.println("Dati numele imaginii fara extensie: ");
-//        String img_name = b.readLine();
-//        System.out.println("Dati calea de salvare: ");
-//        String img_path = b.readLine();
-//        System.out.println("Dati culoarea regresiei: ");
-//        String color = b.readLine();
-//        regressionR("/home/student/PP/lab2/myGraal/src/dataset.txt", img_name, img_path, color);
-//
+        BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Dati numele imaginii fara extensie: ");
+        String img_name = b.readLine();
+        System.out.println("Dati calea de salvare: ");
+        String img_path = b.readLine();
+        System.out.println("Dati culoarea regresiei: ");
+        String color = b.readLine();
+        regressionR("/home/student/PP/lab2/myGraal/src/dataset.txt", img_name, img_path, color);
+
         // Tema 3
         binomial();
     }

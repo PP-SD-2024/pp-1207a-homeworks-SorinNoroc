@@ -3,7 +3,6 @@ import org.graalvm.polyglot.*;
 
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
 
 //clasa principala - aplicatie JAVA
 class Polyglot {
@@ -24,6 +23,9 @@ class Polyglot {
 
     //metoda privata pentru evaluarea unei sume de control simple a literelor unui text ASCII, folosind PYTHON
     private static int SumCRC(String token){
+
+        // Aplicatie 1 si 2
+
         //construim un context care ne permite sa folosim elemente din PYTHON
         Context polyglot = Context.newBuilder().allowAllAccess(true).build();
         //folosim o variabila generica care va captura rezultatul excutiei functiei PYTHON, sum()
@@ -42,21 +44,25 @@ class Polyglot {
 
     //functia MAIN
     public static void main(String[] args) {
+
         HashMap<Integer, LinkedList<String>> map = new HashMap<>();
         //construim un context pentru evaluare elemente JS
         Context polyglot = Context.create();
         //construim un array de string-uri, folosind cuvinte din pagina web:  https://chrisseaton.com/truffleruby/tenthings/
-        Value array = polyglot.eval("js", "[\"Kotlin\",\"is\",\"fk\",\"very\",\"awesome\"];");
+        Value array = polyglot.eval("js", "[\"Kotlin\",\"is\",\"known\",\"as\",\"good\"];");
         //pentru fiecare cuvant, convertim la upcase folosind R si calculam suma de control folosind PYTHON
         String[] upper = new String[(int)array.getArraySize()];
         int[] crc = new int[(int)array.getArraySize()];
         int sum;
+
         for (int i = 0; i < array.getArraySize();i++) {
             String element = array.getArrayElement(i).asString();
             upper[i] = RToUpper(element);
             crc[i] = SumCRC(upper[i]);
             // System.out.println(upper[i] + " -> " + crc[i]);
         }
+
+        // Tema 1
         for(int i = 0; i < crc.length; i++) {
             sum = crc[i];
             if (map.containsKey(sum)) {
