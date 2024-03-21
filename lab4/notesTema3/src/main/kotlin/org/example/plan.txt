@@ -1,0 +1,36 @@
+Cand pornim aplicatia, alegem logare sau creare user nou.
+- Logare:
+    Introducem username si parola, vedem in vectorul de useri care l-am populat din
+    fisierul de useri la inceputul programului si daca cv e gresit, reintroducem.
+    Daca e corect, punem currentUser = User(...)
+    Intrebam userul ce vrea:
+    1> Afisare titluri notite
+        - Deschidem fisier-ul si scoatem primul rand si punem intr-un vector pe care il afisam dupa asta
+    2> Creare
+        - Intrebam userul un titlu apoi un text pentru notita, cream obiectul,
+        scriem in fisierul cu numele criptat de username datele la urma.
+    3> Afisare notita dupa titlu
+        - Afisam datele din notita curenta
+    4> Stergere notita
+        - Eliminam din lista si scriem in fisier fara acea notita
+
+
+- Creare user nou:
+    Intrebam ce username vrea
+    Intrebam ce parola vrea si sa o introduca de 2 ori
+    Adaugam username si hash in fisier si punem currentUser = ...
+
+
+Numele fisierului e criptat dupa usrname!!
+Exemplu fisier pentru User boss123 - 53neh4h6k4hkkllnfgldjsfls546.txt:
+"""
+Cumparaturi\n
+12/01/2008 12:56\n
+Salata\nBranza\nLapte\nZmeura
+\t\t\n
+Todo\n
+1/5/2001 04:25\n
+Spalat\nDentist\nPapagal\n
+\t\t\n..........
+"""
+
