@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" modified="2024-03-30T19:33:10.376Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="6CpL54NS7Ui_AFSIj6b_" version="24.2.1" type="device">
+  <diagram name="Pagină-1" id="vyckWBvW2ov384qtLafc">
+    <mxGraphModel dx="1106" dy="804" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m6bPisX75vpIV_h19c_9-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Celula&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ get_nume(): str&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="11" y="143" width="124" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-2" value="raise NotImplementedError(&quot;message&quot;)" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="156" width="225" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-3" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="m6bPisX75vpIV_h19c_9-2">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FibraMusculara&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nume: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ masa_musculara: float&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_nume(): str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_masa_musculara(): float&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-165" y="354" width="160" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FibraNervoasa&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nume: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ lungime: float&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_nume(): str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_lungime(): float&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="155" y="354" width="160" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MuschiGeneric&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ fibre: list&amp;lt;FibraMusculara&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nume: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ masa_musculara: float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ scop: str&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_nume(): str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_masa_musculara(): float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_scop(): str&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-165" y="544" width="160" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TrunchiNervos&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nervi: list&amp;lt;FibraNervoasa&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nume: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ lungime: float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ specializare: str&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_nume(): str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_lungime(): float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+get_specializare(): str&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="155" y="544" width="160" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-9" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;fontSize=12;curved=1;" edge="1" parent="1" source="m6bPisX75vpIV_h19c_9-6" target="m6bPisX75vpIV_h19c_9-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1" y="782" as="sourcePoint" />
+            <mxPoint x="161" y="782" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-10" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;fontSize=12;curved=1;" edge="1" parent="1" source="m6bPisX75vpIV_h19c_9-5" target="m6bPisX75vpIV_h19c_9-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="145" y="475" as="sourcePoint" />
+            <mxPoint x="151" y="558" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-11" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" edge="1" parent="1" source="m6bPisX75vpIV_h19c_9-5" target="m6bPisX75vpIV_h19c_9-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-191" y="296" as="sourcePoint" />
+            <mxPoint x="-31" y="296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-12" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" edge="1" parent="1" source="m6bPisX75vpIV_h19c_9-6" target="m6bPisX75vpIV_h19c_9-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-91" y="445" as="sourcePoint" />
+            <mxPoint x="56" y="226" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6bPisX75vpIV_h19c_9-13" value="" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1" source="m6bPisX75vpIV_h19c_9-2" target="m6bPisX75vpIV_h19c_9-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-153" y="280" as="sourcePoint" />
+            <mxPoint x="7" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

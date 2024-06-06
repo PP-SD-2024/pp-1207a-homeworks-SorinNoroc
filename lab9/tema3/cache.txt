@@ -1,0 +1,4 @@
+http://mike.tuiasi.ro/labPP09.pdf, 1714039757.3310206, 200
+https://open.spotify.com/, 1714039757.9341724, 200
+https://www.youtube.com/, 1714039758.4715066, 200
+https://leetcode.com/problemset/, 1714039758.7447524, 403

@@ -1,0 +1,736 @@
+Mar 31 00:00:30 debian systemd[1]: rsyslog.service: Sent signal SIGHUP to main process 436 (rsyslogd) on client request.
+Mar 31 00:00:30 debian systemd[1]: logrotate.service: Succeeded.
+Mar 31 00:00:30 debian systemd[1]: Finished Rotate log files.
+Mar 31 00:00:30 debian systemd[1]: man-db.service: Succeeded.
+Mar 31 00:00:30 debian systemd[1]: Finished Daily man-db regeneration.
+Mar 31 00:33:13 debian kernel: [73421.015321] watchdog: BUG: soft lockup - CPU#0 stuck for 1355s! [swapper/0:0]
+Mar 31 00:33:13 debian kernel: [73421.015327] Modules linked in: xt_conntrack nft_chain_nat xt_MASQUERADE nf_nat nf_conntrack_netlink nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 xfrm_user xfrm_algo nft_counter xt_addrtype nft_compat nf_tables nfnetlink br_netfilter bridge stp llc overlay rfkill joydev sg snd_intel8x0 snd_ac97_codec ac97_bus snd_pcm snd_timer snd soundcore vboxguest pcspkr serio_raw ac evdev msr parport_pc ppdev lp parport configfs fuse ip_tables x_tables autofs4 ext4 crc16 mbcache jbd2 btrfs blake2b_generic raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor raid6_pq libcrc32c crc32c_generic raid1 raid0 multipath linear md_mod sd_mod t10_pi crc_t10dif crct10dif_generic crct10dif_pclmul crct10dif_common crc32_pclmul crc32c_intel vmwgfx ata_generic ghash_clmulni_intel ttm ata_piix libata drm_kms_helper cec mptspi mptscsih mptbase scsi_transport_spi ohci_pci drm psmouse aesni_intel libaes crypto_simd ehci_pci scsi_mod ohci_hcd ehci_hcd cryptd glue_helper e1000 i2c_piix4 usbcore
+Mar 31 00:33:13 debian kernel: [73421.015488]  usb_common battery video button
+Mar 31 00:33:13 debian kernel: [73421.015520] CPU: 0 PID: 0 Comm: swapper/0 Tainted: G             L    5.10.0-28-amd64 #1 Debian 5.10.209-2
+Mar 31 00:33:13 debian kernel: [73421.015522] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Mar 31 00:33:13 debian kernel: [73421.015529] RIP: 0010:native_safe_halt+0xe/0x20
+Mar 31 00:33:13 debian kernel: [73421.015531] Code: 00 f0 80 48 02 20 48 8b 00 a8 08 75 c0 e9 77 ff ff ff cc cc cc cc cc cc cc cc cc cc e9 07 00 00 00 0f 00 2d 86 c0 4f 00 fb f4 <c3> cc cc cc cc 66 66 2e 0f 1f 84 00 00 00 00 00 66 90 e9 07 00 00
+Mar 31 00:33:13 debian kernel: [73421.015532] RSP: 0018:ffffffff90a03eb8 EFLAGS: 00010202
+Mar 31 00:33:13 debian kernel: [73421.015534] RAX: ffffffff8fd0e130 RBX: 0000000000000000 RCX: ffff9b0dd3c34940
+Mar 31 00:33:13 debian kernel: [73421.015535] RDX: 000000000e22e68a RSI: 0000000000000086 RDI: 0000000000000086
+Mar 31 00:33:13 debian kernel: [73421.015535] RBP: ffffffff90a13940 R08: 0000000000000000 R09: 000000000000fc00
+Mar 31 00:33:13 debian kernel: [73421.015536] R10: 000000000000fc00 R11: 0000000000000000 R12: 0000000000000000
+Mar 31 00:33:13 debian kernel: [73421.015537] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+Mar 31 00:33:13 debian kernel: [73421.015538] FS:  0000000000000000(0000) GS:ffff9b0dd3c00000(0000) knlGS:0000000000000000
+Mar 31 00:33:13 debian kernel: [73421.015540] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Mar 31 00:33:13 debian kernel: [73421.015540] CR2: 00003ea400088000 CR3: 0000000122d24000 CR4: 00000000000106f0
+Mar 31 00:33:13 debian kernel: [73421.015543] Call Trace:
+Mar 31 00:33:13 debian kernel: [73421.015546]  <IRQ>
+Mar 31 00:33:13 debian kernel: [73421.015553]  ? watchdog_timer_fn+0x1bb/0x210
+Mar 31 00:33:13 debian kernel: [73421.015555]  ? lockup_detector_update_enable+0x50/0x50
+Mar 31 00:33:13 debian kernel: [73421.015558]  ? __hrtimer_run_queues+0x127/0x280
+Mar 31 00:33:13 debian kernel: [73421.015559]  ? hrtimer_interrupt+0x110/0x2c0
+Mar 31 00:33:13 debian kernel: [73421.015562]  ? __sysvec_apic_timer_interrupt+0x5c/0xe0
+Mar 31 00:33:13 debian kernel: [73421.015564]  ? asm_call_irq_on_stack+0xf/0x20
+Mar 31 00:33:13 debian kernel: [73421.015564]  </IRQ>
+Mar 31 00:33:13 debian kernel: [73421.015566]  ? sysvec_apic_timer_interrupt+0x72/0x80
+Mar 31 00:33:13 debian kernel: [73421.015567]  ? asm_sysvec_apic_timer_interrupt+0x12/0x20
+Mar 31 00:33:13 debian kernel: [73421.015569]  ? __sched_text_end+0x6/0x6
+Mar 31 00:33:13 debian kernel: [73421.015571]  ? native_safe_halt+0xe/0x20
+Mar 31 00:33:13 debian kernel: [73421.015573]  default_idle+0xa/0x20
+Mar 31 00:33:13 debian kernel: [73421.015574]  default_idle_call+0x3c/0xd0
+Mar 31 00:33:13 debian kernel: [73421.015577]  do_idle+0x20c/0x2b0
+Mar 31 00:33:13 debian kernel: [73421.015580]  cpu_startup_entry+0x19/0x20
+Mar 31 00:33:13 debian kernel: [73421.015584]  start_kernel+0x574/0x599
+Mar 31 00:33:13 debian kernel: [73421.015590]  secondary_startup_64_no_verify+0xb0/0xbb
+Mar 31 00:33:13 debian rtkit-daemon[991]: The canary thread is apparently starving. Taking action.
+Mar 31 00:33:13 debian systemd[1]: systemd-timesyncd.service: Watchdog timeout (limit 3min)!
+Mar 31 00:33:13 debian rtkit-daemon[991]: Demoting known real-time threads.
+Mar 31 00:33:13 debian systemd[1]: systemd-timesyncd.service: Killing process 394 (systemd-timesyn) with signal SIGABRT.
+Mar 31 00:33:13 debian rtkit-daemon[991]: Successfully demoted thread 20759 of process 20758.
+Mar 31 00:33:13 debian systemd[1]: systemd-logind.service: Watchdog timeout (limit 3min)!
+Mar 31 00:33:13 debian rtkit-daemon[991]: Successfully demoted thread 20758 of process 20758.
+Mar 31 00:33:13 debian systemd[1]: systemd-logind.service: Killing process 18765 (systemd-logind) with signal SIGABRT.
+Mar 31 00:33:13 debian rtkit-daemon[991]: Successfully demoted thread 20761 of process 20753.
+Mar 31 00:33:13 debian systemd[1]: systemd-udevd.service: Watchdog timeout (limit 3min)!
+Mar 31 00:33:13 debian rtkit-daemon[991]: Successfully demoted thread 20760 of process 20753.
+Mar 31 00:33:13 debian systemd[1]: systemd-udevd.service: Killing process 18755 (systemd-udevd) with signal SIGABRT.
+Mar 31 00:33:13 debian rtkit-daemon[991]: Successfully demoted thread 20753 of process 20753.
+Mar 31 00:33:13 debian rtkit-daemon[991]: Successfully demoted thread 20754 of process 20752.
+Mar 31 00:33:13 debian rtkit-daemon[991]: Successfully demoted thread 20752 of process 20752.
+Mar 31 00:33:13 debian rtkit-daemon[991]: Demoted 7 threads.
+Mar 31 00:33:13 debian rsyslogd: [origin software="rsyslogd" swVersion="8.2102.0" x-pid="436" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+Mar 31 00:33:13 debian systemd[1]: systemd-udevd.service: Main process exited, code=killed, status=6/ABRT
+Mar 31 00:33:13 debian systemd[1]: systemd-udevd.service: Failed with result 'watchdog'.
+Mar 31 00:33:13 debian systemd[1]: systemd-udevd.service: Scheduled restart job, restart counter is at 2.
+Mar 31 00:33:13 debian systemd[1]: Stopped Rule-based Manager for Device Events and Files.
+Mar 31 00:33:13 debian systemd[1]: Starting Rule-based Manager for Device Events and Files...
+Mar 31 00:33:13 debian systemd[1]: systemd-timesyncd.service: Main process exited, code=killed, status=6/ABRT
+Mar 31 00:33:13 debian systemd[1]: systemd-timesyncd.service: Failed with result 'watchdog'.
+Mar 31 00:33:13 debian systemd[1]: systemd-timesyncd.service: Scheduled restart job, restart counter is at 1.
+Mar 31 00:33:13 debian systemd[1]: Stopped Network Time Synchronization.
+Mar 31 00:33:13 debian systemd[1]: Starting Network Time Synchronization...
+Mar 31 00:33:13 debian systemd[1]: systemd-logind.service: Main process exited, code=killed, status=6/ABRT
+Mar 31 00:33:13 debian systemd[1]: systemd-logind.service: Failed with result 'watchdog'.
+Mar 31 00:33:13 debian systemd[1]: systemd-logind.service: Scheduled restart job, restart counter is at 2.
+Mar 31 00:33:13 debian systemd[1]: Stopped User Login Management.
+Mar 31 00:33:13 debian systemd[1]: Starting Load Kernel Module drm...
+Mar 31 00:33:13 debian systemd[1]: modprobe@drm.service: Succeeded.
+Mar 31 00:33:13 debian systemd[1]: Finished Load Kernel Module drm.
+Mar 31 00:33:13 debian systemd[1]: Starting User Login Management...
+Mar 31 00:33:13 debian systemd[1]: Started Rule-based Manager for Device Events and Files.
+Mar 31 00:33:13 debian systemd[1]: Started Network Time Synchronization.
+Mar 31 00:33:13 debian systemd[1]: Started User Login Management.
+Mar 31 00:33:13 debian systemd-timesyncd[20861]: Initial synchronization to time server 86.122.68.21:123 (0.debian.pool.ntp.org).
+Mar 31 00:33:22 debian lightdm[20791]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+Mar 31 00:33:22 debian systemd[1]: Stopping Session c5 of user lightdm.
+Mar 31 00:33:22 debian systemd[20736]: pulseaudio.service: Succeeded.
+Mar 31 00:33:22 debian systemd[1]: session-c5.scope: Succeeded.
+Mar 31 00:33:22 debian systemd[1]: Stopped Session c5 of user lightdm.
+Mar 31 00:33:32 debian systemd[1]: Stopping User Manager for UID 118...
+Mar 31 00:33:32 debian systemd[20736]: Stopped target Main User Target.
+Mar 31 00:33:32 debian systemd[20736]: Stopping Accessibility services bus...
+Mar 31 00:33:32 debian systemd[20736]: Stopping D-Bus User Message Bus...
+Mar 31 00:33:32 debian systemd[20736]: Stopping Virtual filesystem service...
+Mar 31 00:33:32 debian systemd[20736]: Stopping Multimedia Service...
+Mar 31 00:33:32 debian systemd[20736]: dbus.service: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Stopped D-Bus User Message Bus.
+Mar 31 00:33:32 debian systemd[20736]: pipewire.service: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Stopped Multimedia Service.
+Mar 31 00:33:32 debian systemd[20736]: at-spi-dbus-bus.service: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Stopped Accessibility services bus.
+Mar 31 00:33:32 debian systemd[20736]: gvfs-daemon.service: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Stopped Virtual filesystem service.
+Mar 31 00:33:32 debian systemd[20736]: Stopped target Basic System.
+Mar 31 00:33:32 debian systemd[20736]: Stopped target Paths.
+Mar 31 00:33:32 debian systemd[20736]: Stopped target Sockets.
+Mar 31 00:33:32 debian systemd[20736]: Stopped target Timers.
+Mar 31 00:33:32 debian systemd[20736]: dbus.socket: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Closed D-Bus User Message Bus Socket.
+Mar 31 00:33:32 debian systemd[20736]: dirmngr.socket: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Closed GnuPG network certificate management daemon.
+Mar 31 00:33:32 debian systemd[20736]: gpg-agent-browser.socket: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Mar 31 00:33:32 debian systemd[20736]: gpg-agent-extra.socket: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Mar 31 00:33:32 debian systemd[20736]: gpg-agent-ssh.socket: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Mar 31 00:33:32 debian systemd[20736]: gpg-agent.socket: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Closed GnuPG cryptographic agent and passphrase cache.
+Mar 31 00:33:32 debian systemd[20736]: pipewire.socket: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Closed Multimedia System.
+Mar 31 00:33:32 debian systemd[20736]: pk-debconf-helper.socket: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Closed debconf communication socket.
+Mar 31 00:33:32 debian systemd[20736]: pulseaudio.socket: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Closed Sound System.
+Mar 31 00:33:32 debian systemd[20736]: Removed slice User Application Slice.
+Mar 31 00:33:32 debian systemd[20736]: Reached target Shutdown.
+Mar 31 00:33:32 debian systemd[20736]: systemd-exit.service: Succeeded.
+Mar 31 00:33:32 debian systemd[20736]: Finished Exit the Session.
+Mar 31 00:33:32 debian systemd[20736]: Reached target Exit the Session.
+Mar 31 00:33:32 debian systemd[1]: user@118.service: Succeeded.
+Mar 31 00:33:32 debian systemd[1]: Stopped User Manager for UID 118.
+Mar 31 00:33:32 debian systemd[1]: Stopping User Runtime Directory /run/user/118...
+Mar 31 00:33:32 debian systemd[1]: run-user-118.mount: Succeeded.
+Mar 31 00:33:32 debian systemd[1162]: run-user-118.mount: Succeeded.
+Mar 31 00:33:32 debian systemd[1]: user-runtime-dir@118.service: Succeeded.
+Mar 31 00:33:32 debian systemd[1]: Stopped User Runtime Directory /run/user/118.
+Mar 31 00:33:32 debian systemd[1]: Removed slice User Slice of UID 118.
+Mar 31 00:49:22 debian kernel: [74390.586806] e1000: enp0s17 NIC Link is Down
+Mar 31 00:49:26 debian kernel: [74394.618981] e1000: enp0s17 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Mar 31 00:49:26 debian NetworkManager[432]: <info>  [1711838966.6878] device (enp0s17): carrier: link connected
+Mar 31 00:49:26 debian NetworkManager[432]: <info>  [1711838966.6896] device (enp0s17): DHCPv4 lease renewal requested
+Mar 31 00:49:26 debian NetworkManager[432]: <info>  [1711838966.6997] dhcp4 (enp0s17): canceled DHCP transaction
+Mar 31 00:49:26 debian NetworkManager[432]: <info>  [1711838966.6998] dhcp4 (enp0s17): state changed bound -> terminated
+Mar 31 00:49:26 debian NetworkManager[432]: <info>  [1711838966.7025] dhcp4 (enp0s17): activation: beginning transaction (timeout in 45 seconds)
+Mar 31 00:49:26 debian NetworkManager[432]: <info>  [1711838966.7232] dhcp4 (enp0s17): state changed unknown -> bound, address=10.0.2.15
+Mar 31 00:49:26 debian dbus-daemon[431]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=432 comm="/usr/sbin/NetworkManager --no-daemon ")
+Mar 31 00:49:26 debian systemd[1]: Starting Network Manager Script Dispatcher Service...
+Mar 31 00:49:26 debian dbus-daemon[431]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Mar 31 00:49:26 debian systemd[1]: Started Network Manager Script Dispatcher Service.
+Mar 31 00:49:37 debian systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Mar 31 00:57:01 debian CRON[21215]: (root) CMD (if [ -x /usr/share/mdadm/checkarray ] && [ $(date +%d) -le 7 ]; then /usr/share/mdadm/checkarray --cron --all --idle --quiet; fi)
+Apr  2 01:45:57 debian systemd[1]: Condition check resulted in Run anacron jobs being skipped.
+Apr  2 01:45:57 debian systemd[1]: Condition check resulted in Daily apt download activities being skipped.
+Apr  2 01:45:57 debian systemd[1]: Condition check resulted in Daily apt upgrade and clean activities being skipped.
+Apr  2 01:45:57 debian systemd[1]: Starting Discard unused blocks on filesystems from /etc/fstab...
+Apr  2 01:45:57 debian systemd[1]: Starting Refresh fwupd metadata and update motd...
+Apr  2 01:45:57 debian systemd[1]: Condition check resulted in exim4-base housekeeping being skipped.
+Apr  2 01:45:57 debian systemd[1]: Condition check resulted in Rotate log files being skipped.
+Apr  2 01:45:57 debian systemd[1]: Condition check resulted in Daily man-db regeneration being skipped.
+Apr  2 01:45:57 debian systemd[1]: fstrim.service: Succeeded.
+Apr  2 01:45:57 debian systemd[1]: Finished Discard unused blocks on filesystems from /etc/fstab.
+Apr  2 01:45:57 debian systemd[1]: fwupd-refresh.service: Main process exited, code=exited, status=1/FAILURE
+Apr  2 01:45:57 debian systemd[1]: fwupd-refresh.service: Failed with result 'exit-code'.
+Apr  2 01:45:57 debian systemd[1]: Failed to start Refresh fwupd metadata and update motd.
+Apr  2 02:17:01 debian CRON[21514]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr  2 02:54:46 debian kernel: [79535.857375] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 02:54:46 debian kernel: [79535.857426] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 02:54:47 debian kernel: [79536.124292] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 02:54:47 debian kernel: [79536.124320] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 02:54:47 debian kernel: [79536.152364] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 02:54:47 debian kernel: [79536.152417] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 02:54:47 debian lightdm[22006]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+Apr  2 02:54:47 debian systemd[1]: Created slice User Slice of UID 118.
+Apr  2 02:54:47 debian systemd[1]: Starting User Runtime Directory /run/user/118...
+Apr  2 02:54:47 debian systemd[1]: Finished User Runtime Directory /run/user/118.
+Apr  2 02:54:47 debian systemd[1]: Starting User Manager for UID 118...
+Apr  2 02:54:47 debian systemd[22010]: Queued start job for default target Main User Target.
+Apr  2 02:54:47 debian systemd[22010]: Created slice User Application Slice.
+Apr  2 02:54:47 debian systemd[22010]: Reached target Paths.
+Apr  2 02:54:47 debian systemd[22010]: Reached target Timers.
+Apr  2 02:54:47 debian systemd[22010]: Starting D-Bus User Message Bus Socket.
+Apr  2 02:54:47 debian systemd[22010]: Listening on GnuPG network certificate management daemon.
+Apr  2 02:54:47 debian systemd[22010]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Apr  2 02:54:47 debian systemd[22010]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Apr  2 02:54:47 debian systemd[22010]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Apr  2 02:54:47 debian systemd[22010]: Listening on GnuPG cryptographic agent and passphrase cache.
+Apr  2 02:54:47 debian systemd[22010]: Listening on Multimedia System.
+Apr  2 02:54:47 debian systemd[22010]: Listening on debconf communication socket.
+Apr  2 02:54:47 debian systemd[22010]: Listening on Sound System.
+Apr  2 02:54:47 debian systemd[22010]: Listening on D-Bus User Message Bus Socket.
+Apr  2 02:54:47 debian systemd[22010]: Reached target Sockets.
+Apr  2 02:54:47 debian systemd[22010]: Reached target Basic System.
+Apr  2 02:54:47 debian systemd[1]: Started User Manager for UID 118.
+Apr  2 02:54:47 debian systemd[1]: Started Session c1 of user lightdm.
+Apr  2 02:54:47 debian systemd[22010]: Started Multimedia Service.
+Apr  2 02:54:47 debian systemd[22010]: Starting Sound Service...
+Apr  2 02:54:47 debian rtkit-daemon[991]: Successfully made thread 22026 of process 22026 owned by '118' high priority at nice level -11.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Supervising 1 threads of 1 processes of 1 users.
+Apr  2 02:54:47 debian systemd[22010]: Started D-Bus User Message Bus.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Supervising 1 threads of 1 processes of 1 users.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Supervising 1 threads of 1 processes of 1 users.
+Apr  2 02:54:47 debian pipewire[22026]: Failed to receive portal pid: org.freedesktop.DBus.Error.NameHasNoOwner: Could not get PID of name 'org.freedesktop.portal.Desktop': no such name
+Apr  2 02:54:47 debian rtkit-daemon[991]: Successfully made thread 22028 of process 22026 owned by '118' RT at priority 20.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Supervising 2 threads of 1 processes of 1 users.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Successfully made thread 22027 of process 22027 owned by '118' high priority at nice level -11.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Supervising 3 threads of 2 processes of 1 users.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Successfully made thread 22031 of process 22031 owned by '118' high priority at nice level -11.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Supervising 4 threads of 3 processes of 1 users.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Supervising 4 threads of 3 processes of 1 users.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Supervising 4 threads of 3 processes of 1 users.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Successfully made thread 22033 of process 22031 owned by '118' RT at priority 20.
+Apr  2 02:54:47 debian rtkit-daemon[991]: Supervising 5 threads of 3 processes of 1 users.
+Apr  2 02:54:48 debian pulseaudio[22027]: Disabling timer-based scheduling because running inside a VM.
+Apr  2 02:54:48 debian rtkit-daemon[991]: Supervising 5 threads of 3 processes of 1 users.
+Apr  2 02:54:48 debian rtkit-daemon[991]: Successfully made thread 22034 of process 22027 owned by '118' RT at priority 5.
+Apr  2 02:54:48 debian rtkit-daemon[991]: Supervising 6 threads of 3 processes of 1 users.
+Apr  2 02:54:48 debian pulseaudio[22027]: Disabling timer-based scheduling because running inside a VM.
+Apr  2 02:54:48 debian rtkit-daemon[991]: Supervising 6 threads of 3 processes of 1 users.
+Apr  2 02:54:48 debian rtkit-daemon[991]: Successfully made thread 22035 of process 22027 owned by '118' RT at priority 5.
+Apr  2 02:54:48 debian rtkit-daemon[991]: Supervising 7 threads of 3 processes of 1 users.
+Apr  2 02:54:48 debian systemd[22010]: Started Sound Service.
+Apr  2 02:54:48 debian systemd[22010]: Reached target Main User Target.
+Apr  2 02:54:48 debian systemd[22010]: Startup finished in 466ms.
+Apr  2 02:54:48 debian kernel: [79537.220197] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 02:54:48 debian kernel: [79537.220243] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 02:54:48 debian dbus-daemon[22030]: [session uid=118 pid=22030] Activating via systemd: service name='org.a11y.Bus' unit='at-spi-dbus-bus.service' requested by ':1.4' (uid=118 pid=22029 comm="/usr/sbin/lightdm-gtk-greeter ")
+Apr  2 02:54:48 debian systemd[22010]: Starting Accessibility services bus...
+Apr  2 02:54:48 debian dbus-daemon[22030]: [session uid=118 pid=22030] Successfully activated service 'org.a11y.Bus'
+Apr  2 02:54:48 debian systemd[22010]: Started Accessibility services bus.
+Apr  2 02:54:48 debian dbus-daemon[22030]: [session uid=118 pid=22030] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.6' (uid=118 pid=22029 comm="/usr/sbin/lightdm-gtk-greeter ")
+Apr  2 02:54:48 debian systemd[22010]: Starting Virtual filesystem service...
+Apr  2 02:54:48 debian dbus-daemon[22030]: [session uid=118 pid=22030] Successfully activated service 'org.gtk.vfs.Daemon'
+Apr  2 02:54:48 debian systemd[22010]: Started Virtual filesystem service.
+Apr  2 02:54:48 debian at-spi-bus-launcher[22041]: dbus-daemon[22041]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=118 pid=22029 comm="/usr/sbin/lightdm-gtk-greeter ")
+Apr  2 02:54:48 debian at-spi-bus-launcher[22041]: dbus-daemon[22041]: Successfully activated service 'org.a11y.atspi.Registry'
+Apr  2 02:54:48 debian at-spi-bus-launcher[22062]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+Apr  2 03:00:09 debian lightdm[22069]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+Apr  2 03:00:10 debian systemd[1]: Stopping Session c1 of user lightdm.
+Apr  2 03:00:10 debian systemd[22010]: pulseaudio.service: Succeeded.
+Apr  2 03:00:10 debian systemd[1]: session-c1.scope: Succeeded.
+Apr  2 03:00:10 debian systemd[1]: Stopped Session c1 of user lightdm.
+Apr  2 03:00:20 debian systemd[1]: Stopping User Manager for UID 118...
+Apr  2 03:00:20 debian systemd[22010]: Stopped target Main User Target.
+Apr  2 03:00:20 debian systemd[22010]: Stopping Accessibility services bus...
+Apr  2 03:00:20 debian systemd[22010]: Stopping D-Bus User Message Bus...
+Apr  2 03:00:20 debian systemd[22010]: Stopping Virtual filesystem service...
+Apr  2 03:00:20 debian systemd[22010]: Stopping Multimedia Service...
+Apr  2 03:00:20 debian systemd[22010]: pipewire.service: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Stopped Multimedia Service.
+Apr  2 03:00:20 debian systemd[22010]: dbus.service: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Stopped D-Bus User Message Bus.
+Apr  2 03:00:20 debian systemd[22010]: at-spi-dbus-bus.service: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Stopped Accessibility services bus.
+Apr  2 03:00:20 debian systemd[22010]: gvfs-daemon.service: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Stopped Virtual filesystem service.
+Apr  2 03:00:20 debian systemd[22010]: Stopped target Basic System.
+Apr  2 03:00:20 debian systemd[22010]: Stopped target Paths.
+Apr  2 03:00:20 debian systemd[22010]: Stopped target Sockets.
+Apr  2 03:00:20 debian systemd[22010]: Stopped target Timers.
+Apr  2 03:00:20 debian systemd[22010]: dbus.socket: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Closed D-Bus User Message Bus Socket.
+Apr  2 03:00:20 debian systemd[22010]: dirmngr.socket: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Closed GnuPG network certificate management daemon.
+Apr  2 03:00:20 debian systemd[22010]: gpg-agent-browser.socket: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Apr  2 03:00:20 debian systemd[22010]: gpg-agent-extra.socket: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Apr  2 03:00:20 debian systemd[22010]: gpg-agent-ssh.socket: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Apr  2 03:00:20 debian systemd[22010]: gpg-agent.socket: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Closed GnuPG cryptographic agent and passphrase cache.
+Apr  2 03:00:20 debian systemd[22010]: pipewire.socket: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Closed Multimedia System.
+Apr  2 03:00:20 debian systemd[22010]: pk-debconf-helper.socket: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Closed debconf communication socket.
+Apr  2 03:00:20 debian systemd[22010]: pulseaudio.socket: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Closed Sound System.
+Apr  2 03:00:20 debian systemd[22010]: Removed slice User Application Slice.
+Apr  2 03:00:20 debian systemd[22010]: Reached target Shutdown.
+Apr  2 03:00:20 debian systemd[22010]: systemd-exit.service: Succeeded.
+Apr  2 03:00:20 debian systemd[22010]: Finished Exit the Session.
+Apr  2 03:00:20 debian systemd[22010]: Reached target Exit the Session.
+Apr  2 03:00:20 debian systemd[1]: user@118.service: Succeeded.
+Apr  2 03:00:20 debian systemd[1]: Stopped User Manager for UID 118.
+Apr  2 03:00:20 debian systemd[1]: Stopping User Runtime Directory /run/user/118...
+Apr  2 03:00:20 debian systemd[1162]: run-user-118.mount: Succeeded.
+Apr  2 03:00:20 debian systemd[1]: run-user-118.mount: Succeeded.
+Apr  2 03:00:20 debian systemd[1]: user-runtime-dir@118.service: Succeeded.
+Apr  2 03:00:20 debian systemd[1]: Stopped User Runtime Directory /run/user/118.
+Apr  2 03:00:20 debian systemd[1]: Removed slice User Slice of UID 118.
+Apr  2 03:00:20 debian systemd[1]: user-118.slice: Consumed 1.535s CPU time.
+Apr  2 03:10:01 debian CRON[22193]: (root) CMD (test -e /run/systemd/system || SERVICE_MODE=1 /sbin/e2scrub_all -A -r)
+Apr  2 03:15:44 debian kernel: [80793.867539] e1000: enp0s17 NIC Link is Down
+Apr  2 03:15:48 debian kernel: [80797.930270] e1000: enp0s17 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Apr  2 03:15:49 debian NetworkManager[432]: <info>  [1712016948.9885] device (enp0s17): carrier: link connected
+Apr  2 03:15:49 debian NetworkManager[432]: <info>  [1712016949.0088] device (enp0s17): DHCPv4 lease renewal requested
+Apr  2 03:15:49 debian NetworkManager[432]: <info>  [1712016949.0867] dhcp4 (enp0s17): canceled DHCP transaction
+Apr  2 03:15:49 debian NetworkManager[432]: <info>  [1712016949.0875] dhcp4 (enp0s17): state changed bound -> terminated
+Apr  2 03:15:49 debian NetworkManager[432]: <info>  [1712016949.0951] dhcp4 (enp0s17): activation: beginning transaction (timeout in 45 seconds)
+Apr  2 03:15:49 debian NetworkManager[432]: <info>  [1712016949.1251] dhcp4 (enp0s17): state changed unknown -> bound, address=10.0.2.15
+Apr  2 03:15:49 debian dbus-daemon[431]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=432 comm="/usr/sbin/NetworkManager --no-daemon ")
+Apr  2 03:15:49 debian systemd[1]: Starting Network Manager Script Dispatcher Service...
+Apr  2 03:15:49 debian dbus-daemon[431]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Apr  2 03:15:49 debian systemd[1]: Started Network Manager Script Dispatcher Service.
+Apr  2 03:15:59 debian systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Apr  2 03:17:01 debian CRON[22317]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr  2 12:06:55 debian systemd[1]: Condition check resulted in Run anacron jobs being skipped.
+Apr  2 12:06:55 debian systemd[1]: Condition check resulted in Daily apt download activities being skipped.
+Apr  2 12:06:55 debian systemd[1]: Condition check resulted in Daily apt upgrade and clean activities being skipped.
+Apr  2 12:06:55 debian systemd[1]: Starting Refresh fwupd metadata and update motd...
+Apr  2 12:06:55 debian systemd[1]: fwupd-refresh.service: Main process exited, code=exited, status=1/FAILURE
+Apr  2 12:06:55 debian systemd[1]: fwupd-refresh.service: Failed with result 'exit-code'.
+Apr  2 12:06:55 debian systemd[1]: Failed to start Refresh fwupd metadata and update motd.
+Apr  2 12:10:05 debian dbus-daemon[1180]: [session uid=1000 pid=1180] Activating service name='org.freedesktop.thumbnails.Thumbnailer1' requested by ':1.35' (uid=1000 pid=1395 comm="Thunar --sm-client-id 25a082d24-3b2e-412c-86af-bd9")
+Apr  2 12:10:05 debian org.freedesktop.thumbnails.Thumbnailer1[22948]: Registered thumbnailer /usr/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+Apr  2 12:10:05 debian org.freedesktop.thumbnails.Thumbnailer1[22948]: Registered thumbnailer /usr/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+Apr  2 12:10:05 debian org.freedesktop.thumbnails.Thumbnailer1[22948]: Registered thumbnailer atril-thumbnailer -s %s %u %o
+Apr  2 12:10:05 debian dbus-daemon[1180]: [session uid=1000 pid=1180] Successfully activated service 'org.freedesktop.thumbnails.Thumbnailer1'
+Apr  2 12:17:01 debian CRON[23550]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr  2 12:30:01 debian CRON[24415]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Apr  2 12:34:52 debian systemd[1]: Condition check resulted in Run anacron jobs being skipped.
+Apr  2 12:56:53 debian kernel: [84518.928159] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 12:56:53 debian kernel: [84518.928222] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 12:56:53 debian kernel: [84519.095290] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 12:56:53 debian kernel: [84519.095320] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 12:56:53 debian kernel: [84519.120437] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 12:56:53 debian kernel: [84519.120465] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 12:56:54 debian lightdm[25600]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+Apr  2 12:56:54 debian systemd[1]: Created slice User Slice of UID 118.
+Apr  2 12:56:54 debian systemd[1]: Starting User Runtime Directory /run/user/118...
+Apr  2 12:56:54 debian systemd[1]: Finished User Runtime Directory /run/user/118.
+Apr  2 12:56:54 debian systemd[1]: Starting User Manager for UID 118...
+Apr  2 12:56:54 debian systemd[25604]: Queued start job for default target Main User Target.
+Apr  2 12:56:54 debian systemd[25604]: Created slice User Application Slice.
+Apr  2 12:56:54 debian systemd[25604]: Reached target Paths.
+Apr  2 12:56:54 debian systemd[25604]: Reached target Timers.
+Apr  2 12:56:54 debian systemd[25604]: Starting D-Bus User Message Bus Socket.
+Apr  2 12:56:54 debian systemd[25604]: Listening on GnuPG network certificate management daemon.
+Apr  2 12:56:54 debian systemd[25604]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Apr  2 12:56:54 debian systemd[25604]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Apr  2 12:56:54 debian systemd[25604]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Apr  2 12:56:54 debian systemd[25604]: Listening on GnuPG cryptographic agent and passphrase cache.
+Apr  2 12:56:54 debian systemd[25604]: Listening on Multimedia System.
+Apr  2 12:56:54 debian systemd[25604]: Listening on debconf communication socket.
+Apr  2 12:56:54 debian systemd[25604]: Listening on Sound System.
+Apr  2 12:56:54 debian systemd[25604]: Listening on D-Bus User Message Bus Socket.
+Apr  2 12:56:54 debian systemd[25604]: Reached target Sockets.
+Apr  2 12:56:54 debian systemd[25604]: Reached target Basic System.
+Apr  2 12:56:54 debian systemd[1]: Started User Manager for UID 118.
+Apr  2 12:56:54 debian systemd[25604]: Started Multimedia Service.
+Apr  2 12:56:54 debian systemd[1]: Started Session c2 of user lightdm.
+Apr  2 12:56:54 debian systemd[25604]: Starting Sound Service...
+Apr  2 12:56:54 debian rtkit-daemon[991]: Successfully made thread 25620 of process 25620 owned by '118' high priority at nice level -11.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 1 threads of 1 processes of 1 users.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 1 threads of 1 processes of 1 users.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 1 threads of 1 processes of 1 users.
+Apr  2 12:56:54 debian systemd[25604]: Started D-Bus User Message Bus.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Successfully made thread 25622 of process 25620 owned by '118' RT at priority 20.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 2 threads of 1 processes of 1 users.
+Apr  2 12:56:54 debian pipewire[25620]: Failed to receive portal pid: org.freedesktop.DBus.Error.NameHasNoOwner: Could not get PID of name 'org.freedesktop.portal.Desktop': no such name
+Apr  2 12:56:54 debian rtkit-daemon[991]: Successfully made thread 25621 of process 25621 owned by '118' high priority at nice level -11.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 3 threads of 2 processes of 1 users.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Successfully made thread 25626 of process 25626 owned by '118' high priority at nice level -11.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 4 threads of 3 processes of 1 users.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 4 threads of 3 processes of 1 users.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 4 threads of 3 processes of 1 users.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Successfully made thread 25627 of process 25626 owned by '118' RT at priority 20.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 5 threads of 3 processes of 1 users.
+Apr  2 12:56:54 debian pulseaudio[25621]: Disabling timer-based scheduling because running inside a VM.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 5 threads of 3 processes of 1 users.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Successfully made thread 25628 of process 25621 owned by '118' RT at priority 5.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 6 threads of 3 processes of 1 users.
+Apr  2 12:56:54 debian pulseaudio[25621]: Disabling timer-based scheduling because running inside a VM.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 6 threads of 3 processes of 1 users.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Successfully made thread 25629 of process 25621 owned by '118' RT at priority 5.
+Apr  2 12:56:54 debian rtkit-daemon[991]: Supervising 7 threads of 3 processes of 1 users.
+Apr  2 12:56:54 debian systemd[25604]: Started Sound Service.
+Apr  2 12:56:54 debian systemd[25604]: Reached target Main User Target.
+Apr  2 12:56:54 debian systemd[25604]: Startup finished in 493ms.
+Apr  2 12:56:54 debian kernel: [84520.266868] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 12:56:54 debian kernel: [84520.266900] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 12:56:55 debian dbus-daemon[25624]: [session uid=118 pid=25624] Activating via systemd: service name='org.a11y.Bus' unit='at-spi-dbus-bus.service' requested by ':1.4' (uid=118 pid=25623 comm="/usr/sbin/lightdm-gtk-greeter ")
+Apr  2 12:56:55 debian systemd[25604]: Starting Accessibility services bus...
+Apr  2 12:56:55 debian dbus-daemon[25624]: [session uid=118 pid=25624] Successfully activated service 'org.a11y.Bus'
+Apr  2 12:56:55 debian systemd[25604]: Started Accessibility services bus.
+Apr  2 12:56:55 debian dbus-daemon[25624]: [session uid=118 pid=25624] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.6' (uid=118 pid=25623 comm="/usr/sbin/lightdm-gtk-greeter ")
+Apr  2 12:56:55 debian systemd[25604]: Starting Virtual filesystem service...
+Apr  2 12:56:55 debian dbus-daemon[25624]: [session uid=118 pid=25624] Successfully activated service 'org.gtk.vfs.Daemon'
+Apr  2 12:56:55 debian systemd[25604]: Started Virtual filesystem service.
+Apr  2 12:56:55 debian at-spi-bus-launcher[25635]: dbus-daemon[25635]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=118 pid=25623 comm="/usr/sbin/lightdm-gtk-greeter ")
+Apr  2 12:56:55 debian at-spi-bus-launcher[25635]: dbus-daemon[25635]: Successfully activated service 'org.a11y.atspi.Registry'
+Apr  2 12:56:55 debian at-spi-bus-launcher[25655]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+Apr  2 13:03:02 debian kernel: [84887.839254] watchdog: BUG: soft lockup - CPU#0 stuck for 340s! [swapper/0:0]
+Apr  2 13:03:02 debian kernel: [84887.839290] Modules linked in: xt_conntrack nft_chain_nat xt_MASQUERADE nf_nat nf_conntrack_netlink nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 xfrm_user xfrm_algo nft_counter xt_addrtype nft_compat nf_tables nfnetlink br_netfilter bridge stp llc overlay rfkill joydev sg snd_intel8x0 snd_ac97_codec ac97_bus snd_pcm snd_timer snd soundcore vboxguest pcspkr serio_raw ac evdev msr parport_pc ppdev lp parport configfs fuse ip_tables x_tables autofs4 ext4 crc16 mbcache jbd2 btrfs blake2b_generic raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor raid6_pq libcrc32c crc32c_generic raid1 raid0 multipath linear md_mod sd_mod t10_pi crc_t10dif crct10dif_generic crct10dif_pclmul crct10dif_common crc32_pclmul crc32c_intel vmwgfx ata_generic ghash_clmulni_intel ttm ata_piix libata drm_kms_helper cec mptspi mptscsih mptbase scsi_transport_spi ohci_pci drm psmouse aesni_intel libaes crypto_simd ehci_pci scsi_mod ohci_hcd ehci_hcd cryptd glue_helper e1000 i2c_piix4 usbcore
+Apr  2 13:03:02 debian kernel: [84887.840315]  usb_common battery video button
+Apr  2 13:03:02 debian kernel: [84887.840331] CPU: 0 PID: 0 Comm: swapper/0 Tainted: G             L    5.10.0-28-amd64 #1 Debian 5.10.209-2
+Apr  2 13:03:02 debian kernel: [84887.840341] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Apr  2 13:03:02 debian kernel: [84887.840501] RIP: 0010:native_safe_halt+0xe/0x20
+Apr  2 13:03:02 debian kernel: [84887.840503] Code: 00 f0 80 48 02 20 48 8b 00 a8 08 75 c0 e9 77 ff ff ff cc cc cc cc cc cc cc cc cc cc e9 07 00 00 00 0f 00 2d 86 c0 4f 00 fb f4 <c3> cc cc cc cc 66 66 2e 0f 1f 84 00 00 00 00 00 66 90 e9 07 00 00
+Apr  2 13:03:02 debian kernel: [84887.840504] RSP: 0018:ffffffff90a03eb8 EFLAGS: 00010206
+Apr  2 13:03:02 debian kernel: [84887.840506] RAX: ffffffff8fd0e130 RBX: 0000000000000000 RCX: ffff9b0dd3c34940
+Apr  2 13:03:02 debian kernel: [84887.840507] RDX: 00000000108d15fa RSI: 0000000000000086 RDI: 0000000000000086
+Apr  2 13:03:02 debian kernel: [84887.840508] RBP: ffffffff90a13940 R08: 0000000000000000 R09: 0000000000006400
+Apr  2 13:03:02 debian kernel: [84887.840509] R10: 0000000000000019 R11: 0000000000000000 R12: 0000000000000000
+Apr  2 13:03:02 debian kernel: [84887.840509] R13: 0000000000000000 R14: 0000000000000000 R15: 0000000000000000
+Apr  2 13:03:02 debian kernel: [84887.840511] FS:  0000000000000000(0000) GS:ffff9b0dd3c00000(0000) knlGS:0000000000000000
+Apr  2 13:03:02 debian kernel: [84887.840512] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Apr  2 13:03:02 debian kernel: [84887.840513] CR2: 0000137c02fcc000 CR3: 0000000128de6000 CR4: 00000000000106f0
+Apr  2 13:03:02 debian kernel: [84887.840514] Call Trace:
+Apr  2 13:03:02 debian kernel: [84887.840579]  <IRQ>
+Apr  2 13:03:02 debian kernel: [84887.840661]  ? watchdog_timer_fn+0x1bb/0x210
+Apr  2 13:03:02 debian kernel: [84887.840663]  ? lockup_detector_update_enable+0x50/0x50
+Apr  2 13:03:02 debian kernel: [84887.840690]  ? __hrtimer_run_queues+0x127/0x280
+Apr  2 13:03:02 debian kernel: [84887.840692]  ? hrtimer_interrupt+0x110/0x2c0
+Apr  2 13:03:02 debian kernel: [84887.840773]  ? __sysvec_apic_timer_interrupt+0x5c/0xe0
+Apr  2 13:03:02 debian kernel: [84887.840775]  ? asm_call_irq_on_stack+0xf/0x20
+Apr  2 13:03:02 debian kernel: [84887.840776]  </IRQ>
+Apr  2 13:03:02 debian kernel: [84887.840778]  ? sysvec_apic_timer_interrupt+0x72/0x80
+Apr  2 13:03:02 debian kernel: [84887.840779]  ? asm_sysvec_apic_timer_interrupt+0x12/0x20
+Apr  2 13:03:02 debian kernel: [84887.840780]  ? __sched_text_end+0x6/0x6
+Apr  2 13:03:02 debian kernel: [84887.840782]  ? native_safe_halt+0xe/0x20
+Apr  2 13:03:02 debian kernel: [84887.840784]  default_idle+0xa/0x20
+Apr  2 13:03:02 debian kernel: [84887.840785]  default_idle_call+0x3c/0xd0
+Apr  2 13:03:02 debian kernel: [84887.840815]  do_idle+0x20c/0x2b0
+Apr  2 13:03:02 debian kernel: [84887.840843]  cpu_startup_entry+0x19/0x20
+Apr  2 13:03:02 debian kernel: [84887.840921]  start_kernel+0x574/0x599
+Apr  2 13:03:02 debian kernel: [84887.841024]  secondary_startup_64_no_verify+0xb0/0xbb
+Apr  2 13:03:02 debian systemd[1]: systemd-udevd.service: Watchdog timeout (limit 3min)!
+Apr  2 13:03:02 debian rtkit-daemon[991]: The canary thread is apparently starving. Taking action.
+Apr  2 13:03:02 debian systemd[1]: systemd-udevd.service: Killing process 20857 (systemd-udevd) with signal SIGABRT.
+Apr  2 13:03:02 debian rtkit-daemon[991]: Demoting known real-time threads.
+Apr  2 13:03:02 debian systemd[1]: systemd-journald.service: Watchdog timeout (limit 3min)!
+Apr  2 13:03:02 debian rtkit-daemon[991]: Successfully demoted thread 25627 of process 25626.
+Apr  2 13:03:02 debian systemd[1]: systemd-journald.service: Killing process 18762 (systemd-journal) with signal SIGABRT.
+Apr  2 13:03:02 debian rtkit-daemon[991]: Successfully demoted thread 25626 of process 25626.
+Apr  2 13:03:02 debian rtkit-daemon[991]: Successfully demoted thread 25629 of process 25621.
+Apr  2 13:03:02 debian rtkit-daemon[991]: Successfully demoted thread 25628 of process 25621.
+Apr  2 13:03:02 debian rtkit-daemon[991]: Successfully demoted thread 25621 of process 25621.
+Apr  2 13:03:02 debian rtkit-daemon[991]: Successfully demoted thread 25622 of process 25620.
+Apr  2 13:03:02 debian rtkit-daemon[991]: Successfully demoted thread 25620 of process 25620.
+Apr  2 13:03:02 debian rtkit-daemon[991]: Demoted 7 threads.
+Apr  2 13:03:02 debian systemd[1]: Starting Flush Journal to Persistent Storage...
+Apr  2 13:03:02 debian systemd[1]: Finished Flush Journal to Persistent Storage.
+Apr  2 13:03:03 debian systemd[1]: Started User Login Management.
+Apr  2 13:03:04 debian kernel: [84889.867756] e1000: enp0s17 NIC Link is Down
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.5873] device (enp0s17): state change: activated -> unavailable (reason 'carrier-changed', sys-iface-state: 'managed')
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6018] dhcp4 (enp0s17): canceled DHCP transaction
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6019] dhcp4 (enp0s17): state changed bound -> terminated
+Apr  2 13:03:10 debian avahi-daemon[429]: Withdrawing address record for 10.0.2.15 on enp0s17.
+Apr  2 13:03:10 debian avahi-daemon[429]: Leaving mDNS multicast group on interface enp0s17.IPv4 with address 10.0.2.15.
+Apr  2 13:03:10 debian avahi-daemon[429]: Interface enp0s17.IPv4 no longer relevant for mDNS.
+Apr  2 13:03:10 debian avahi-daemon[429]: Withdrawing address record for fe80::97f0:f971:8a78:b847 on enp0s17.
+Apr  2 13:03:10 debian avahi-daemon[429]: Leaving mDNS multicast group on interface enp0s17.IPv6 with address fe80::97f0:f971:8a78:b847.
+Apr  2 13:03:10 debian avahi-daemon[429]: Interface enp0s17.IPv6 no longer relevant for mDNS.
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6323] manager: NetworkManager state is now CONNECTED_LOCAL
+Apr  2 13:03:10 debian dbus-daemon[431]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=432 comm="/usr/sbin/NetworkManager --no-daemon ")
+Apr  2 13:03:10 debian systemd[1]: Starting Network Manager Script Dispatcher Service...
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6567] device (enp0s17): carrier: link connected
+Apr  2 13:03:10 debian kernel: [84895.942589] e1000: enp0s17 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6574] device (enp0s17): state change: unavailable -> disconnected (reason 'carrier-changed', sys-iface-state: 'managed')
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6800] policy: auto-activating connection 'Wired connection 1' (3367042f-90c9-3169-af30-df90177b4a7e)
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6808] device (enp0s17): Activation: starting connection 'Wired connection 1' (3367042f-90c9-3169-af30-df90177b4a7e)
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6810] device (enp0s17): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6818] manager: NetworkManager state is now CONNECTING
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6822] device (enp0s17): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6946] device (enp0s17): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.6956] dhcp4 (enp0s17): activation: beginning transaction (timeout in 45 seconds)
+Apr  2 13:03:10 debian dbus-daemon[431]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Apr  2 13:03:10 debian systemd[1]: Started Network Manager Script Dispatcher Service.
+Apr  2 13:03:10 debian avahi-daemon[429]: Joining mDNS multicast group on interface enp0s17.IPv6 with address fe80::97f0:f971:8a78:b847.
+Apr  2 13:03:10 debian avahi-daemon[429]: New relevant interface enp0s17.IPv6 for mDNS.
+Apr  2 13:03:10 debian avahi-daemon[429]: Registering new address record for fe80::97f0:f971:8a78:b847 on enp0s17.*.
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.7426] dhcp4 (enp0s17): state changed unknown -> bound, address=10.0.2.15
+Apr  2 13:03:10 debian avahi-daemon[429]: Joining mDNS multicast group on interface enp0s17.IPv4 with address 10.0.2.15.
+Apr  2 13:03:10 debian avahi-daemon[429]: New relevant interface enp0s17.IPv4 for mDNS.
+Apr  2 13:03:10 debian avahi-daemon[429]: Registering new address record for 10.0.2.15 on enp0s17.IPv4.
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.7517] device (enp0s17): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.7604] device (enp0s17): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.7625] device (enp0s17): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.7663] manager: NetworkManager state is now CONNECTED_LOCAL
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.7740] manager: NetworkManager state is now CONNECTED_SITE
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.7766] policy: set 'Wired connection 1' (enp0s17) as default for IPv4 routing and DNS
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.7921] device (enp0s17): Activation: successful, device activated.
+Apr  2 13:03:10 debian NetworkManager[432]: <info>  [1712052190.7947] manager: NetworkManager state is now CONNECTED_GLOBAL
+Apr  2 13:03:13 debian systemd-timesyncd[25681]: Initial synchronization to time server 89.36.93.9:123 (1.debian.pool.ntp.org).
+Apr  2 13:03:13 debian lightdm[25743]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+Apr  2 13:03:13 debian systemd[1]: Stopping Session c2 of user lightdm.
+Apr  2 13:03:13 debian systemd[25604]: pulseaudio.service: Succeeded.
+Apr  2 13:03:13 debian systemd[1]: session-c2.scope: Succeeded.
+Apr  2 13:03:13 debian systemd[1]: Stopped Session c2 of user lightdm.
+Apr  2 13:03:21 debian systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Apr  2 13:03:23 debian systemd[1]: Stopping User Manager for UID 118...
+Apr  2 13:03:23 debian systemd[25604]: Stopped target Main User Target.
+Apr  2 13:03:23 debian systemd[25604]: Stopping Accessibility services bus...
+Apr  2 13:03:23 debian gvfsd[25637]: A connection to the bus can't be made
+Apr  2 13:03:23 debian systemd[25604]: Stopping D-Bus User Message Bus...
+Apr  2 13:03:23 debian systemd[25604]: Stopping Virtual filesystem service...
+Apr  2 13:03:23 debian pipewire-media-session[25626]: error id:0 seq:158 res:-32 (Broken pipe): connection error
+Apr  2 13:03:23 debian systemd[25604]: Stopping Multimedia Service...
+Apr  2 13:03:23 debian systemd[25604]: pipewire.service: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Stopped Multimedia Service.
+Apr  2 13:03:23 debian systemd[25604]: dbus.service: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Stopped D-Bus User Message Bus.
+Apr  2 13:03:23 debian systemd[25604]: at-spi-dbus-bus.service: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Stopped Accessibility services bus.
+Apr  2 13:03:23 debian systemd[25604]: gvfs-daemon.service: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Stopped Virtual filesystem service.
+Apr  2 13:03:23 debian systemd[25604]: Stopped target Basic System.
+Apr  2 13:03:23 debian systemd[25604]: Stopped target Paths.
+Apr  2 13:03:23 debian systemd[25604]: Stopped target Sockets.
+Apr  2 13:03:23 debian systemd[25604]: Stopped target Timers.
+Apr  2 13:03:23 debian systemd[25604]: dbus.socket: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Closed D-Bus User Message Bus Socket.
+Apr  2 13:03:23 debian systemd[25604]: dirmngr.socket: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Closed GnuPG network certificate management daemon.
+Apr  2 13:03:23 debian systemd[25604]: gpg-agent-browser.socket: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Apr  2 13:03:23 debian systemd[25604]: gpg-agent-extra.socket: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Apr  2 13:03:23 debian systemd[25604]: gpg-agent-ssh.socket: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Apr  2 13:03:23 debian systemd[25604]: gpg-agent.socket: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Closed GnuPG cryptographic agent and passphrase cache.
+Apr  2 13:03:23 debian systemd[25604]: pipewire.socket: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Closed Multimedia System.
+Apr  2 13:03:23 debian systemd[25604]: pk-debconf-helper.socket: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Closed debconf communication socket.
+Apr  2 13:03:23 debian systemd[25604]: pulseaudio.socket: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Closed Sound System.
+Apr  2 13:03:23 debian systemd[25604]: Removed slice User Application Slice.
+Apr  2 13:03:23 debian systemd[25604]: Reached target Shutdown.
+Apr  2 13:03:23 debian systemd[25604]: systemd-exit.service: Succeeded.
+Apr  2 13:03:23 debian systemd[25604]: Finished Exit the Session.
+Apr  2 13:03:23 debian systemd[25604]: Reached target Exit the Session.
+Apr  2 13:03:23 debian systemd[1]: user@118.service: Succeeded.
+Apr  2 13:03:23 debian systemd[1]: Stopped User Manager for UID 118.
+Apr  2 13:03:23 debian systemd[1]: Stopping User Runtime Directory /run/user/118...
+Apr  2 13:03:23 debian systemd[1]: run-user-118.mount: Succeeded.
+Apr  2 13:03:23 debian systemd[1162]: run-user-118.mount: Succeeded.
+Apr  2 13:03:23 debian systemd[1]: user-runtime-dir@118.service: Succeeded.
+Apr  2 13:03:23 debian systemd[1]: Stopped User Runtime Directory /run/user/118.
+Apr  2 13:03:23 debian systemd[1]: Removed slice User Slice of UID 118.
+Apr  2 13:03:23 debian systemd[1]: user-118.slice: Consumed 1.614s CPU time.
+Apr  2 13:11:10 debian dbus-daemon[1180]: [session uid=1000 pid=1180] Activating service name='org.freedesktop.thumbnails.Thumbnailer1' requested by ':1.35' (uid=1000 pid=1395 comm="Thunar --sm-client-id 25a082d24-3b2e-412c-86af-bd9")
+Apr  2 13:11:11 debian org.freedesktop.thumbnails.Thumbnailer1[26041]: Registered thumbnailer /usr/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+Apr  2 13:11:11 debian org.freedesktop.thumbnails.Thumbnailer1[26041]: Registered thumbnailer /usr/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+Apr  2 13:11:11 debian org.freedesktop.thumbnails.Thumbnailer1[26041]: Registered thumbnailer atril-thumbnailer -s %s %u %o
+Apr  2 13:11:11 debian dbus-daemon[1180]: [session uid=1000 pid=1180] Successfully activated service 'org.freedesktop.thumbnails.Thumbnailer1'
+Apr  2 13:11:29 debian dbus-daemon[431]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.43' (uid=1000 pid=1358 comm="/usr/libexec/xdg-desktop-portal-gtk ")
+Apr  2 13:11:29 debian systemd[1]: Starting Hostname Service...
+Apr  2 13:11:29 debian dbus-daemon[431]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Apr  2 13:11:29 debian systemd[1]: Started Hostname Service.
+Apr  2 13:11:59 debian systemd[1]: systemd-hostnamed.service: Succeeded.
+Apr  2 13:12:05 debian dbus-daemon[431]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.43' (uid=1000 pid=1358 comm="/usr/libexec/xdg-desktop-portal-gtk ")
+Apr  2 13:12:05 debian systemd[1]: Starting Hostname Service...
+Apr  2 13:12:05 debian dbus-daemon[431]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Apr  2 13:12:05 debian systemd[1]: Started Hostname Service.
+Apr  2 13:12:35 debian systemd[1]: systemd-hostnamed.service: Succeeded.
+Apr  2 13:17:01 debian CRON[26447]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr  2 13:30:01 debian CRON[26515]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Apr  2 13:32:56 debian systemd[1]: Condition check resulted in Run anacron jobs being skipped.
+Apr  2 13:44:12 debian systemd[1]: Starting Cleanup of Temporary Directories...
+Apr  2 13:44:12 debian systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+Apr  2 13:44:12 debian systemd[1]: Finished Cleanup of Temporary Directories.
+Apr  2 13:47:56 debian kernel: [87582.104160] e1000: enp0s17 NIC Link is Down
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.7577] device (enp0s17): state change: activated -> unavailable (reason 'carrier-changed', sys-iface-state: 'managed')
+Apr  2 13:48:02 debian kernel: [87588.159391] e1000: enp0s17 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.8041] dhcp4 (enp0s17): canceled DHCP transaction
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.8048] dhcp4 (enp0s17): state changed bound -> terminated
+Apr  2 13:48:02 debian avahi-daemon[429]: Withdrawing address record for 10.0.2.15 on enp0s17.
+Apr  2 13:48:02 debian avahi-daemon[429]: Leaving mDNS multicast group on interface enp0s17.IPv4 with address 10.0.2.15.
+Apr  2 13:48:02 debian avahi-daemon[429]: Interface enp0s17.IPv4 no longer relevant for mDNS.
+Apr  2 13:48:02 debian avahi-daemon[429]: Withdrawing address record for fe80::97f0:f971:8a78:b847 on enp0s17.
+Apr  2 13:48:02 debian avahi-daemon[429]: Leaving mDNS multicast group on interface enp0s17.IPv6 with address fe80::97f0:f971:8a78:b847.
+Apr  2 13:48:02 debian avahi-daemon[429]: Interface enp0s17.IPv6 no longer relevant for mDNS.
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.8990] manager: NetworkManager state is now CONNECTED_LOCAL
+Apr  2 13:48:02 debian dbus-daemon[431]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=432 comm="/usr/sbin/NetworkManager --no-daemon ")
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.9104] device (enp0s17): carrier: link connected
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.9117] device (enp0s17): state change: unavailable -> disconnected (reason 'carrier-changed', sys-iface-state: 'managed')
+Apr  2 13:48:02 debian systemd[1]: Starting Network Manager Script Dispatcher Service...
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.9527] policy: auto-activating connection 'Wired connection 1' (3367042f-90c9-3169-af30-df90177b4a7e)
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.9533] device (enp0s17): Activation: starting connection 'Wired connection 1' (3367042f-90c9-3169-af30-df90177b4a7e)
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.9535] device (enp0s17): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.9537] manager: NetworkManager state is now CONNECTING
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.9538] device (enp0s17): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.9771] device (enp0s17): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:48:02 debian NetworkManager[432]: <info>  [1712054882.9779] dhcp4 (enp0s17): activation: beginning transaction (timeout in 45 seconds)
+Apr  2 13:48:02 debian avahi-daemon[429]: Joining mDNS multicast group on interface enp0s17.IPv6 with address fe80::97f0:f971:8a78:b847.
+Apr  2 13:48:03 debian avahi-daemon[429]: New relevant interface enp0s17.IPv6 for mDNS.
+Apr  2 13:48:03 debian avahi-daemon[429]: Registering new address record for fe80::97f0:f971:8a78:b847 on enp0s17.*.
+Apr  2 13:48:03 debian NetworkManager[432]: <info>  [1712054883.0316] dhcp4 (enp0s17): state changed unknown -> bound, address=10.0.2.15
+Apr  2 13:48:03 debian NetworkManager[432]: <info>  [1712054883.0362] device (enp0s17): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:48:03 debian avahi-daemon[429]: Joining mDNS multicast group on interface enp0s17.IPv4 with address 10.0.2.15.
+Apr  2 13:48:03 debian avahi-daemon[429]: New relevant interface enp0s17.IPv4 for mDNS.
+Apr  2 13:48:03 debian avahi-daemon[429]: Registering new address record for 10.0.2.15 on enp0s17.IPv4.
+Apr  2 13:48:03 debian dbus-daemon[431]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Apr  2 13:48:03 debian systemd[1]: Started Network Manager Script Dispatcher Service.
+Apr  2 13:48:03 debian NetworkManager[432]: <info>  [1712054883.1213] device (enp0s17): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:48:03 debian NetworkManager[432]: <info>  [1712054883.1231] device (enp0s17): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Apr  2 13:48:03 debian NetworkManager[432]: <info>  [1712054883.1236] manager: NetworkManager state is now CONNECTED_LOCAL
+Apr  2 13:48:03 debian NetworkManager[432]: <info>  [1712054883.1342] manager: NetworkManager state is now CONNECTED_SITE
+Apr  2 13:48:03 debian NetworkManager[432]: <info>  [1712054883.1344] policy: set 'Wired connection 1' (enp0s17) as default for IPv4 routing and DNS
+Apr  2 13:48:03 debian NetworkManager[432]: <info>  [1712054883.1479] device (enp0s17): Activation: successful, device activated.
+Apr  2 13:48:03 debian NetworkManager[432]: <info>  [1712054883.1483] manager: NetworkManager state is now CONNECTED_GLOBAL
+Apr  2 13:48:13 debian systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Apr  2 18:12:55 debian systemd[1]: Started Run anacron jobs.
+Apr  2 18:12:55 debian anacron[26685]: Anacron 2.3 started on 2024-04-02
+Apr  2 18:12:55 debian anacron[26685]: Will run job `cron.daily' in 5 min.
+Apr  2 18:12:55 debian anacron[26685]: Jobs will be executed sequentially
+Apr  2 18:17:01 debian CRON[26691]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Apr  2 18:17:55 debian anacron[26685]: Job `cron.daily' started
+Apr  2 18:17:55 debian anacron[26698]: Updated timestamp for job `cron.daily' to 2024-04-02
+Apr  2 18:17:55 debian anacron[26685]: Job `cron.daily' terminated
+Apr  2 18:17:55 debian anacron[26685]: Normal exit (1 job run)
+Apr  2 18:17:55 debian systemd[1]: anacron.service: Succeeded.
+Apr  2 18:19:47 debian kernel: [88481.892194] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 18:19:47 debian kernel: [88481.892213] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 18:19:47 debian kernel: [88482.007600] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 18:19:47 debian kernel: [88482.007620] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 18:19:47 debian kernel: [88482.023411] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 18:19:47 debian kernel: [88482.023431] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 18:19:47 debian lightdm[26732]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+Apr  2 18:19:47 debian systemd[1]: Created slice User Slice of UID 118.
+Apr  2 18:19:47 debian systemd[1]: Starting User Runtime Directory /run/user/118...
+Apr  2 18:19:47 debian systemd[1]: Finished User Runtime Directory /run/user/118.
+Apr  2 18:19:47 debian systemd[1]: Starting User Manager for UID 118...
+Apr  2 18:19:47 debian systemd[26736]: Queued start job for default target Main User Target.
+Apr  2 18:19:47 debian systemd[26736]: Created slice User Application Slice.
+Apr  2 18:19:47 debian systemd[26736]: Reached target Paths.
+Apr  2 18:19:47 debian systemd[26736]: Reached target Timers.
+Apr  2 18:19:47 debian systemd[26736]: Starting D-Bus User Message Bus Socket.
+Apr  2 18:19:47 debian systemd[26736]: Listening on GnuPG network certificate management daemon.
+Apr  2 18:19:47 debian systemd[26736]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Apr  2 18:19:47 debian systemd[26736]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Apr  2 18:19:47 debian systemd[26736]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Apr  2 18:19:47 debian systemd[26736]: Listening on GnuPG cryptographic agent and passphrase cache.
+Apr  2 18:19:47 debian systemd[26736]: Listening on Multimedia System.
+Apr  2 18:19:47 debian systemd[26736]: Listening on debconf communication socket.
+Apr  2 18:19:47 debian systemd[26736]: Listening on Sound System.
+Apr  2 18:19:47 debian systemd[26736]: Listening on D-Bus User Message Bus Socket.
+Apr  2 18:19:47 debian systemd[26736]: Reached target Sockets.
+Apr  2 18:19:47 debian systemd[26736]: Reached target Basic System.
+Apr  2 18:19:47 debian systemd[1]: Started User Manager for UID 118.
+Apr  2 18:19:47 debian systemd[1]: Started Session c1 of user lightdm.
+Apr  2 18:19:47 debian systemd[26736]: Started Multimedia Service.
+Apr  2 18:19:47 debian systemd[26736]: Starting Sound Service...
+Apr  2 18:19:47 debian rtkit-daemon[991]: Successfully made thread 26751 of process 26751 owned by '118' high priority at nice level -11.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 1 threads of 1 processes of 1 users.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 1 threads of 1 processes of 1 users.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 1 threads of 1 processes of 1 users.
+Apr  2 18:19:47 debian systemd[26736]: Started D-Bus User Message Bus.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Successfully made thread 26753 of process 26751 owned by '118' RT at priority 20.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 2 threads of 1 processes of 1 users.
+Apr  2 18:19:47 debian pipewire[26751]: Failed to receive portal pid: org.freedesktop.DBus.Error.NameHasNoOwner: Could not get PID of name 'org.freedesktop.portal.Desktop': no such name
+Apr  2 18:19:47 debian rtkit-daemon[991]: Successfully made thread 26752 of process 26752 owned by '118' high priority at nice level -11.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 3 threads of 2 processes of 1 users.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Successfully made thread 26757 of process 26757 owned by '118' high priority at nice level -11.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 4 threads of 3 processes of 1 users.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 4 threads of 3 processes of 1 users.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 4 threads of 3 processes of 1 users.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Successfully made thread 26758 of process 26757 owned by '118' RT at priority 20.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 5 threads of 3 processes of 1 users.
+Apr  2 18:19:47 debian pulseaudio[26752]: Disabling timer-based scheduling because running inside a VM.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 5 threads of 3 processes of 1 users.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Successfully made thread 26759 of process 26752 owned by '118' RT at priority 5.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 6 threads of 3 processes of 1 users.
+Apr  2 18:19:47 debian pulseaudio[26752]: Disabling timer-based scheduling because running inside a VM.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 6 threads of 3 processes of 1 users.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Successfully made thread 26760 of process 26752 owned by '118' RT at priority 5.
+Apr  2 18:19:47 debian rtkit-daemon[991]: Supervising 7 threads of 3 processes of 1 users.
+Apr  2 18:19:47 debian systemd[26736]: Started Sound Service.
+Apr  2 18:19:47 debian systemd[26736]: Reached target Main User Target.
+Apr  2 18:19:47 debian systemd[26736]: Startup finished in 299ms.
+Apr  2 18:19:47 debian dbus-daemon[26756]: [session uid=118 pid=26756] Activating via systemd: service name='org.a11y.Bus' unit='at-spi-dbus-bus.service' requested by ':1.4' (uid=118 pid=26754 comm="/usr/sbin/lightdm-gtk-greeter ")
+Apr  2 18:19:47 debian kernel: [88482.699807] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 18:19:47 debian kernel: [88482.699827] [drm:vmw_msg_ioctl [vmwgfx]] *ERROR* Failed to open channel.
+Apr  2 18:19:47 debian systemd[26736]: Starting Accessibility services bus...
+Apr  2 18:19:47 debian dbus-daemon[26756]: [session uid=118 pid=26756] Successfully activated service 'org.a11y.Bus'
+Apr  2 18:19:47 debian systemd[26736]: Started Accessibility services bus.
+Apr  2 18:19:47 debian dbus-daemon[26756]: [session uid=118 pid=26756] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.6' (uid=118 pid=26754 comm="/usr/sbin/lightdm-gtk-greeter ")
+Apr  2 18:19:47 debian systemd[26736]: Starting Virtual filesystem service...
+Apr  2 18:19:47 debian dbus-daemon[26756]: [session uid=118 pid=26756] Successfully activated service 'org.gtk.vfs.Daemon'
+Apr  2 18:19:47 debian systemd[26736]: Started Virtual filesystem service.
+Apr  2 18:19:48 debian at-spi-bus-launcher[26766]: dbus-daemon[26766]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=118 pid=26754 comm="/usr/sbin/lightdm-gtk-greeter ")
+Apr  2 18:19:48 debian at-spi-bus-launcher[26766]: dbus-daemon[26766]: Successfully activated service 'org.a11y.atspi.Registry'
+Apr  2 18:19:48 debian at-spi-bus-launcher[26786]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+Apr  2 18:24:10 debian lightdm[26790]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+Apr  2 18:24:10 debian systemd[1]: Stopping Session c1 of user lightdm.
+Apr  2 18:24:10 debian systemd[1]: session-c1.scope: Succeeded.
+Apr  2 18:24:10 debian systemd[1]: Stopped Session c1 of user lightdm.
+Apr  2 18:24:10 debian systemd[26736]: pulseaudio.service: Succeeded.
+Apr  2 18:24:20 debian systemd[1]: Stopping User Manager for UID 118...
+Apr  2 18:24:20 debian systemd[26736]: Stopped target Main User Target.
+Apr  2 18:24:20 debian systemd[26736]: Stopping Accessibility services bus...
+Apr  2 18:24:20 debian systemd[26736]: Stopping D-Bus User Message Bus...
+Apr  2 18:24:20 debian systemd[26736]: Stopping Virtual filesystem service...
+Apr  2 18:24:20 debian systemd[26736]: Stopping Multimedia Service...
+Apr  2 18:24:20 debian systemd[26736]: at-spi-dbus-bus.service: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Stopped Accessibility services bus.
+Apr  2 18:24:20 debian systemd[26736]: pipewire.service: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Stopped Multimedia Service.
+Apr  2 18:24:20 debian systemd[26736]: dbus.service: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Stopped D-Bus User Message Bus.
+Apr  2 18:24:20 debian systemd[26736]: gvfs-daemon.service: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Stopped Virtual filesystem service.
+Apr  2 18:24:20 debian systemd[26736]: Stopped target Basic System.
+Apr  2 18:24:20 debian systemd[26736]: Stopped target Paths.
+Apr  2 18:24:20 debian systemd[26736]: Stopped target Sockets.
+Apr  2 18:24:20 debian systemd[26736]: Stopped target Timers.
+Apr  2 18:24:20 debian systemd[26736]: dbus.socket: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Closed D-Bus User Message Bus Socket.
+Apr  2 18:24:20 debian systemd[26736]: dirmngr.socket: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Closed GnuPG network certificate management daemon.
+Apr  2 18:24:20 debian systemd[26736]: gpg-agent-browser.socket: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Apr  2 18:24:20 debian systemd[26736]: gpg-agent-extra.socket: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+Apr  2 18:24:20 debian systemd[26736]: gpg-agent-ssh.socket: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+Apr  2 18:24:20 debian systemd[26736]: gpg-agent.socket: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Closed GnuPG cryptographic agent and passphrase cache.
+Apr  2 18:24:20 debian systemd[26736]: pipewire.socket: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Closed Multimedia System.
+Apr  2 18:24:20 debian systemd[26736]: pk-debconf-helper.socket: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Closed debconf communication socket.
+Apr  2 18:24:20 debian systemd[26736]: pulseaudio.socket: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Closed Sound System.
+Apr  2 18:24:20 debian systemd[26736]: Removed slice User Application Slice.
+Apr  2 18:24:20 debian systemd[26736]: Reached target Shutdown.
+Apr  2 18:24:20 debian systemd[26736]: systemd-exit.service: Succeeded.
+Apr  2 18:24:20 debian systemd[26736]: Finished Exit the Session.
+Apr  2 18:24:20 debian systemd[26736]: Reached target Exit the Session.
+Apr  2 18:24:20 debian systemd[1]: user@118.service: Succeeded.
+Apr  2 18:24:20 debian systemd[1]: Stopped User Manager for UID 118.
+Apr  2 18:24:20 debian systemd[1]: Stopping User Runtime Directory /run/user/118...
+Apr  2 18:24:20 debian systemd[1]: run-user-118.mount: Succeeded.
+Apr  2 18:24:20 debian systemd[1162]: run-user-118.mount: Succeeded.
+Apr  2 18:24:20 debian systemd[1]: user-runtime-dir@118.service: Succeeded.
+Apr  2 18:24:20 debian systemd[1]: Stopped User Runtime Directory /run/user/118.
+Apr  2 18:24:20 debian systemd[1]: Removed slice User Slice of UID 118.

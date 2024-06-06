@@ -45,24 +45,16 @@ class Parser:
         self.sum_nums_button = self.builder.get_object('button3')
 
         self.add_list_btn['command'] = self.add_list
-        self.odd_button['command'] = self.odd
-        self.primes_button['command'] = self.prime
-        self.sum_nums_button['command'] = self.summ
+        self.odd_button['command'] = lambda: self.start_process(self.filter_odd)
+        self.primes_button['command'] = lambda: self.start_process(self.filter_prime)
+        self.sum_nums_button['command'] = lambda: self.start_process(self.calculate_sum)
 
         builder.connect_callbacks(self)
         self.final()
 
-    def prime(self):
-        processPrime = Process(target=self.filter_prime, args=(self.queue, self.integer_list))
-        processPrime.start()
-
-    def odd(self):
-        processOdd = Process(target=self.filter_odd, args=(self.queue, self.integer_list))
-        processOdd.start()
-
-    def summ(self):
-        processSum = Process(target=self.calculate_sum, args=(self.queue, self.integer_list))
-        processSum.start()
+    def start_process(self, func):
+        process = Process(target=func, args=(self.queue, self.integer_list))
+        process.start()
 
     def final(self):
         while not self.queue.empty():
